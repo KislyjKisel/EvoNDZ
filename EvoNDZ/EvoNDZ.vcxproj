@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preproc|x64">
+      <Configuration>Preproc</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\app\application.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="lib\app\window.cpp" />
+    <ClCompile Include="lib\content\archive.cpp" />
+    <ClCompile Include="lib\content\content.cpp" />
+    <ClCompile Include="lib\graphics\batch.cpp" />
+    <ClCompile Include="lib\graphics\opengl\dynamic_vertex_buffer.cpp" />
+    <ClCompile Include="lib\graphics\opengl\enum\enum.cpp" />
+    <ClCompile Include="lib\graphics\opengl\index_type.cpp" />
+    <ClCompile Include="lib\graphics\opengl\index_buffer.cpp" />
+    <ClCompile Include="lib\graphics\opengl\parameters.cpp" />
+    <ClCompile Include="lib\graphics\opengl\render_target.cpp" />
+    <ClCompile Include="lib\graphics\opengl\state.cpp" />
+    <ClCompile Include="lib\graphics\opengl\technique.cpp" />
+    <ClCompile Include="lib\graphics\opengl\texture2d.cpp" />
+    <ClCompile Include="lib\graphics\opengl\vertex_array.cpp" />
+    <ClCompile Include="lib\graphics\opengl\vertex_buffer.cpp" />
+    <ClCompile Include="lib\graphics\simple2d\plain_color_2d_batch.cpp" />
+    <ClCompile Include="lib\graphics\simple2d\renderer.cpp" />
+    <ClCompile Include="lib\imgui.cpp" />
+    <ClCompile Include="lib\input\input.cpp" />
+    <ClCompile Include="lib\input\key_names.cpp" />
+    <ClCompile Include="lib\math\math.cpp" />
+    <ClCompile Include="lib\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Preproc|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\util\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\EvoNDZ\app\application.h" />
+    <ClInclude Include="include\EvoNDZ\app\glad_exception.h" />
+    <ClInclude Include="include\EvoNDZ\app\glfw_exception.h" />
+    <ClInclude Include="include\EvoNDZ\app\network_exception.h" />
+    <ClInclude Include="include\EvoNDZ\app\scene.h" />
+    <ClInclude Include="include\EvoNDZ\app\window.h" />
+    <ClInclude Include="include\EvoNDZ\cli\command_manager.h" />
+    <ClInclude Include="include\EvoNDZ\cli\command_group.h" />
+    <ClInclude Include="include\EvoNDZ\cli\command_task.h" />
+    <ClInclude Include="include\EvoNDZ\cli\util.h" />
+    <ClInclude Include="include\EvoNDZ\cli\wait_for_input.h" />
+    <ClInclude Include="include\EvoNDZ\content\archive.h" />
+    <ClInclude Include="include\EvoNDZ\content\content.h" />
+    <ClInclude Include="include\EvoNDZ\content\name.h" />
+    <ClInclude Include="include\EvoNDZ\content\reference.h" />
+    <ClInclude Include="include\EvoNDZ\data\array.h" />
+    <ClInclude Include="include\EvoNDZ\data\lazy.h" />
+    <ClInclude Include="include\EvoNDZ\data\open_map.h" />
+    <ClInclude Include="include\EvoNDZ\data\open_set.h" />
+    <ClInclude Include="include\EvoNDZ\data\property.h" />
+    <ClInclude Include="include\EvoNDZ\data\limited_stack.h" />
+    <ClInclude Include="include\EvoNDZ\data\util.h" />
+    <ClInclude Include="include\EvoNDZ\data\open_hash_table.h" />
+    <ClInclude Include="include\EvoNDZ\debug\logger.h" />
+    <ClInclude Include="include\EvoNDZ\functional\bifunctor.h" />
+    <ClInclude Include="include\EvoNDZ\functional\operation.h" />
+    <ClInclude Include="include\EvoNDZ\functional\category.h" />
+    <ClInclude Include="include\EvoNDZ\functional\function.h" />
+    <ClInclude Include="include\EvoNDZ\functional\functor.h" />
+    <ClInclude Include="include\EvoNDZ\functional\operations\boolean.h" />
+    <ClInclude Include="include\EvoNDZ\functional\operations\natural.h" />
+    <ClInclude Include="include\EvoNDZ\functional\set.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\batch.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\camera2d.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\dynamic_vertex_buffer.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\blend_equation.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\blend_factor.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\buffer_bit.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\buffer_usage.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\capability.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\depth_function.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\draw_mode.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\logical_pixel_operation.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\shader_type.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\storage_flags.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\enum\texture_format.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\index_buffer.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\index_type.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\parameters.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\render_target.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\state.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\technique.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\texture2d.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\types.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\vertex_array.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\opengl\vertex_buffer.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\simple2d\plain_color_2d_batch.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\simple2d\renderer.h" />
+    <ClInclude Include="include\EvoNDZ\graphics\simple2d\shape_batch.h" />
+    <ClInclude Include="include\EvoNDZ\input\input.h" />
+    <ClInclude Include="include\EvoNDZ\input\key.h" />
+    <ClInclude Include="include\EvoNDZ\math\ball.h" />
+    <ClInclude Include="include\EvoNDZ\math\concepts.h" />
+    <ClInclude Include="include\EvoNDZ\math\figure.h" />
+    <ClInclude Include="include\EvoNDZ\math\geometry.h" />
+    <ClInclude Include="include\EvoNDZ\math\line.h" />
+    <ClInclude Include="include\EvoNDZ\math\line_equation.h" />
+    <ClInclude Include="include\EvoNDZ\math\math.h" />
+    <ClInclude Include="include\EvoNDZ\math\matrix3.h" />
+    <ClInclude Include="include\EvoNDZ\math\matrix4.h" />
+    <ClInclude Include="include\EvoNDZ\math\point.h" />
+    <ClInclude Include="include\EvoNDZ\math\quaternion.h" />
+    <ClInclude Include="include\EvoNDZ\math\ray.h" />
+    <ClInclude Include="include\EvoNDZ\math\box.h" />
+    <ClInclude Include="include\EvoNDZ\math\segment.h" />
+    <ClInclude Include="include\EvoNDZ\math\traits.h" />
+    <ClInclude Include="include\EvoNDZ\math\triangle.h" />
+    <ClInclude Include="include\EvoNDZ\math\vector.h" />
+    <ClInclude Include="include\EvoNDZ\math\vector2.h" />
+    <ClInclude Include="include\EvoNDZ\math\vector3.h" />
+    <ClInclude Include="include\EvoNDZ\math\vector4.h" />
+    <ClInclude Include="include\EvoNDZ\meta\assumption.h" />
+    <ClInclude Include="include\EvoNDZ\meta\macro.h" />
+    <ClInclude Include="include\EvoNDZ\meta\sstring.h" />
+    <ClInclude Include="include\EvoNDZ\meta\type_pack.h" />
+    <ClInclude Include="include\EvoNDZ\util\array.h" />
+    <ClInclude Include="include\EvoNDZ\util\enum.h" />
+    <ClInclude Include="include\EvoNDZ\util\integer.h" />
+    <ClInclude Include="include\EvoNDZ\util\color3.h" />
+    <ClInclude Include="include\EvoNDZ\util\string_key.h" />
+    <ClInclude Include="include\EvoNDZ\util\util.h" />
+    <ClInclude Include="include\EvoNDZ\util\bytes.h" />
+    <ClInclude Include="include\EvoNDZ\util\color4.h" />
+    <ClInclude Include="include\EvoNDZ\util\compiler.h" />
+    <ClInclude Include="include\EvoNDZ\util\concepts.h" />
+    <ClInclude Include="include\EvoNDZ\util\event.h" />
+    <ClInclude Include="include\EvoNDZ\util\exception.h" />
+    <ClInclude Include="include\EvoNDZ\util\platform.h" />
+    <ClInclude Include="include\EvoNDZ\util\timer.h" />
+    <ClInclude Include="include\EvoNDZ\util\type_traits.h" />
+    <ClInclude Include="lib\pch.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3a3d46b4-e036-4763-8697-6b1d4bde1229}</ProjectGuid>
+    <RootNamespace>EvoNDZLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>EvoNDZ</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preproc|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preproc|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)zGlad\include\;$(SolutionDir)lib\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preproc|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)zGlad\include\;$(SolutionDir)lib\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin\int\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)zGlad\include\;$(SolutionDir)lib\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ForcedIncludeFiles>pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <CallingConvention>Cdecl</CallingConvention>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preproc|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ForcedIncludeFiles>pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <CallingConvention>Cdecl</CallingConvention>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessToFile>true</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ForcedIncludeFiles>pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <CallingConvention>Cdecl</CallingConvention>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <StringPooling>true</StringPooling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
