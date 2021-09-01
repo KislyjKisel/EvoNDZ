@@ -4,12 +4,13 @@
 
 namespace evo
 {
+	// Flags paired with boolean values, requires T to be derived from Flags<T, *> struct.
 	template<typename T>
 	struct BooleanFlags {
 		using value_type = typename T::value_type;
 
-		constexpr BooleanFlags(const T flags, const bool value) 
-			: m_flags(flags.m_value), m_bools(flags.m_value & ( value ? ~1 : 0 )) { }
+		constexpr BooleanFlags(const T flags, const bool value = true) 
+			: m_flags(flags.m_value), m_bools(flags.m_value & ( value ? ~value_type(0) : 0 )) { }
 
 		constexpr BooleanFlags operator|(const BooleanFlags other) const {
 			return { m_flags | other.m_flags, ( m_bools & ~other.m_flags ) | ( other.m_bools & other.m_flags ) };
@@ -30,6 +31,10 @@ namespace evo
 		constexpr BooleanFlags(const value_type flags, const value_type bools) : m_flags(flags), m_bools(bools) { }
 	};
 
+	//To create enum-like struct with available bitwise operations,
+	//derive it from Flags<{MyEnum}, {optional base data type}>,
+	//inside struct write EVO_FLAGS({MyEnum}) in the beginning, then EVO_FLAGS_E({Name}, {Index}) to create enum entry.
+	//"None" entry is always created and it's value is 0.
 	template<typename T, std::unsigned_integral V = uint64_t>
 	struct Flags {
 	private:
@@ -56,6 +61,8 @@ namespace evo
 		/*constexpr friend T operator|(const entry_function_type a, const entry_function_type b) {
 			return a() | b();
 		}*/
+
+		// vvv Useless/ambiguous? 
 
 		constexpr friend T operator|(const T a, const entry_function_type b) {
 			return a | b();

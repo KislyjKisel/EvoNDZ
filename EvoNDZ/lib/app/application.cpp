@@ -10,7 +10,6 @@
 #include "../../include/EvoNDZ/app/scene.h"
 #include "../../include/EvoNDZ/app/glfw_exception.h"
 #include "../../include/EvoNDZ/app/glad_exception.h"
-#include "../../include/EvoNDZ/app/network_exception.h"
 #include "../../include/EvoNDZ/input/input.h"
 
 

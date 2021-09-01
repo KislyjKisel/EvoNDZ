@@ -50,7 +50,6 @@
     <ClInclude Include="include\EvoNDZ\app\application.h" />
     <ClInclude Include="include\EvoNDZ\app\glad_exception.h" />
     <ClInclude Include="include\EvoNDZ\app\glfw_exception.h" />
-    <ClInclude Include="include\EvoNDZ\app\network_exception.h" />
     <ClInclude Include="include\EvoNDZ\app\scene.h" />
     <ClInclude Include="include\EvoNDZ\app\window.h" />
     <ClInclude Include="include\EvoNDZ\cli\command_manager.h" />
@@ -71,14 +70,7 @@
     <ClInclude Include="include\EvoNDZ\data\util.h" />
     <ClInclude Include="include\EvoNDZ\data\open_hash_table.h" />
     <ClInclude Include="include\EvoNDZ\debug\logger.h" />
-    <ClInclude Include="include\EvoNDZ\functional\bifunctor.h" />
-    <ClInclude Include="include\EvoNDZ\functional\operation.h" />
-    <ClInclude Include="include\EvoNDZ\functional\category.h" />
     <ClInclude Include="include\EvoNDZ\functional\function.h" />
-    <ClInclude Include="include\EvoNDZ\functional\functor.h" />
-    <ClInclude Include="include\EvoNDZ\functional\operations\boolean.h" />
-    <ClInclude Include="include\EvoNDZ\functional\operations\natural.h" />
-    <ClInclude Include="include\EvoNDZ\functional\set.h" />
     <ClInclude Include="include\EvoNDZ\graphics\batch.h" />
     <ClInclude Include="include\EvoNDZ\graphics\camera2d.h" />
     <ClInclude Include="include\EvoNDZ\graphics\opengl\dynamic_vertex_buffer.h" />

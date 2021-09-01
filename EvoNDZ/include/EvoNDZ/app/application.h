@@ -29,7 +29,7 @@ namespace evo::ogl
 
 namespace evo::app
 {
-	void run(int windowWidth, int windowHeight, const char* title, WindowFlags, std::unique_ptr<evo::Scene>&&);
+	void run(int windowWidth, int windowHeight, const char* title, BooleanFlags<WindowFlags>, std::unique_ptr<evo::Scene>&&);
 	void set_scene(std::unique_ptr<evo::Scene>&&);
 	void exit();
 

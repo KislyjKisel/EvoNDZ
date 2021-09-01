@@ -2,4 +2,7 @@
 !.gitignore
 !EvoNDZ.sln
 !EvoNDZ/
+!EvoNDZ Test/
+!lib/
+!zGlad/
 *.user

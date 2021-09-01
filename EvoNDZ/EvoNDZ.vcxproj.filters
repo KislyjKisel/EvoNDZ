@@ -40,9 +40,6 @@
     <Filter Include="graphics\simple2d">
       <UniqueIdentifier>{f1a5bdf5-2aa4-410c-bbc5-4a9999275192}</UniqueIdentifier>
     </Filter>
-    <Filter Include="functional\operations">
-      <UniqueIdentifier>{c5d089a2-c508-4683-9261-48525a742e33}</UniqueIdentifier>
-    </Filter>
     <Filter Include="meta">
       <UniqueIdentifier>{a6dcd893-2028-4f4d-b4fd-ce82d22321c1}</UniqueIdentifier>
     </Filter>
@@ -126,9 +123,6 @@
       <Filter>app</Filter>
     </ClInclude>
     <ClInclude Include="include\EvoNDZ\app\glfw_exception.h">
-      <Filter>app</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\app\network_exception.h">
       <Filter>app</Filter>
     </ClInclude>
     <ClInclude Include="include\EvoNDZ\app\scene.h">
@@ -362,32 +356,11 @@
     <ClInclude Include="include\EvoNDZ\data\util.h">
       <Filter>data</Filter>
     </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\functor.h">
-      <Filter>functional</Filter>
-    </ClInclude>
     <ClInclude Include="include\EvoNDZ\functional\function.h">
-      <Filter>functional</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\bifunctor.h">
       <Filter>functional</Filter>
     </ClInclude>
     <ClInclude Include="include\EvoNDZ\util\array.h">
       <Filter>util</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\category.h">
-      <Filter>functional</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\operation.h">
-      <Filter>functional</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\operations\boolean.h">
-      <Filter>functional\operations</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\set.h">
-      <Filter>functional</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EvoNDZ\functional\operations\natural.h">
-      <Filter>functional\operations</Filter>
     </ClInclude>
     <ClInclude Include="include\EvoNDZ\meta\assumption.h">
       <Filter>meta</Filter>
