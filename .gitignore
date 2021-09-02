@@ -1,8 +1,11 @@
 /*
+
+!CMakeLists.txt
 !.gitignore
+
 !EvoNDZ.sln
 !EvoNDZ/
-# !EvoNDZ Test/
-!lib/
-!zGlad/
+!EvoNDZ Test/
+!third_party/
+
 *.user
