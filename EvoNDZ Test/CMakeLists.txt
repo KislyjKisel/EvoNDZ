@@ -4,6 +4,6 @@ add_executable(EvoNDZ_Test "source/app.cpp")
 
 target_link_libraries(EvoNDZ_Test 
                                 EvoNDZ 
-                                glad
+                                zGlad
                                 ${THIRDPARTY_LIBS}
                      )
