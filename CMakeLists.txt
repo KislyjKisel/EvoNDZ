@@ -11,7 +11,7 @@ else()
     set(THIRDPARTY_LIBS_DIR "Release")
 endif()
 
-file(GLOB THIRDPARTY_LIBS "${CMAKE_SOURCE_DIR}/third_party/lib/${THIRDPARTY_LIBS_DIR}/*.lib")
+file(GLOB THIRDPARTY_LIBS CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/third_party/lib/${THIRDPARTY_LIBS_DIR}/*.lib")
 
 add_subdirectory("EvoNDZ")
 add_subdirectory("EvoNDZ Test")
