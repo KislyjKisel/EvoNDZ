@@ -3,9 +3,6 @@
 !CMakeLists.txt
 !.gitignore
 
-!EvoNDZ.sln
 !EvoNDZ/
-!EvoNDZ Test/
+# !EvoNDZ Test/
 !third_party/
-
-*.user
