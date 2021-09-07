@@ -2,6 +2,7 @@
 
 !CMakeLists.txt
 !.gitignore
+!Config.cmake.in
 
 !EvoNDZ/
 # !EvoNDZ Test/
