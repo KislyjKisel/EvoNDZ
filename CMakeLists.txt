@@ -21,11 +21,6 @@ add_subdirectory("EvoNDZ")
 add_subdirectory("EvoNDZ Test")
 
 install(EXPORT EvoNDZTargets
-    FILE EvoNDZTargets.cmake
-    DESTINATION lib/cmake/EvoNDZ
-)
-
-install(EXPORT EvoNDZTargets
   FILE EvoNDZTargets.cmake
   DESTINATION lib/cmake/EvoNDZ
 )
