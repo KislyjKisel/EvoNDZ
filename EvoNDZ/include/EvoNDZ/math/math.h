@@ -92,7 +92,7 @@ namespace evo::math
 	template<std::floating_point TValue>
 	constexpr TValue cbrt(TValue a) noexcept {
 		if (std::is_constant_evaluated()) {
-			constexpr int iterations = 3 + 2 * same_as<double, TValue>;
+			constexpr int iterations = 3 + 2 * std::same_as<double, TValue>;
 			constexpr TValue d2b3 = TValue(2.0 / 3.0), d1b3 = TValue(1.0 / 3.0);
 			if (a < TValue(0)) return -cbrt(-a);
 			TValue r = a;
