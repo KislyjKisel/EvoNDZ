@@ -1,8 +1,9 @@
 /*
+
+!CMakeLists.txt
 !.gitignore
-!EvoNDZ.sln
+!Config.cmake.in
+
 !EvoNDZ/
 # !EvoNDZ Test/
-!lib/
-!zGlad/
-*.user
+!third_party/
